@@ -23,8 +23,7 @@ Removes the app, all data, caches, preferences, and privacy permissions — no t
 Requires macOS 14.0+, Xcode 15+, Python 3.11+
 
 ```bash
-xcodegen generate && open MacDance.xcodeproj    # build & run
-xcodebuild test -scheme MacDance -destination 'platform=macOS'  # test
+xcodegen generate && open MacDance.xcodeproj     # run
 rm -rf ~/Library/DerivedData/MacDance-* build/   # clean up
 ```
 
