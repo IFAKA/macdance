@@ -20,29 +20,59 @@ Removes the app, all data, caches, preferences, and privacy permissions — no t
 
 ## Development
 
-Requirements: macOS 14.0+, Xcode 15+, Python 3.11+ (for choreography generation)
+**Requirements:** macOS 14.0+, Xcode 15+, Python 3.11+
 
-### Build & Run
+### Quick Start
 
 ```bash
-xcodegen generate    # after adding/removing files
-xcodebuild -scheme MacDance -configuration Debug build
-xcodebuild test -scheme MacDance -destination 'platform=macOS'
+# 1. Generate the Xcode project
+xcodegen generate
+
+# 2. Build and run
+open MacDance.xcodeproj   # then hit Run in Xcode
 ```
 
-Or open `MacDance.xcodeproj` in Xcode and hit Run.
+### Setup Choreography Generation
 
-### Choreography Generation
-
-Generates dance choreography from audio using librosa beat tracking (with an EDGE model path for future AI-generated moves).
+The app generates dance choreography from audio files. This requires a Python environment:
 
 ```bash
-cd Scripts && python3 -m venv .venv && source .venv/bin/activate
+cd Scripts
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+```
 
+Then build the bundled binary that ships with the app:
+
+```bash
 ./Scripts/build_binary.sh          # full (includes torch/EDGE)
 ./Scripts/build_binary.sh --light  # template-only, smaller binary
 ```
+
+### Tests
+
+```bash
+xcodebuild test -scheme MacDance -destination 'platform=macOS'
+```
+
+### Ship a Release
+
+```bash
+./Scripts/build_installer.sh                  # archive → notarize → DMG
+./Scripts/build_installer.sh --skip-notarize  # local testing
+```
+
+<details>
+<summary>First-time notarization setup</summary>
+
+1. Install a Developer ID certificate (Xcode → Settings → Accounts → Manage Certificates)
+2. Store credentials:
+   ```bash
+   xcrun notarytool store-credentials "MacDance" \
+     --apple-id you@email.com --team-id XXXXXXXXXX
+   ```
+3. Optional: `brew install create-dmg` for a polished DMG window
+</details>
 
 ### Clean Up
 
@@ -51,36 +81,17 @@ rm -rf ~/Library/DerivedData/MacDance-*   # Xcode build cache
 rm -rf build/                              # installer artifacts
 ```
 
-This removes all dev-side artifacts. Nothing else is created on your machine during development.
-
-### Build Installer
-
-```bash
-./Scripts/build_installer.sh                  # archive → notarize → DMG
-./Scripts/build_installer.sh --skip-notarize  # local testing without Apple ID
-```
-
-**One-time setup:**
-
-1. Install a Developer ID certificate (Xcode → Settings → Accounts → Manage Certificates)
-2. Store notarization credentials:
-   ```bash
-   xcrun notarytool store-credentials "MacDance" \
-     --apple-id you@email.com --team-id XXXXXXXXXX
-   ```
-3. Optionally: `brew install create-dmg` for a polished DMG window
-
 ### Architecture
 
-| Layer | Files | Responsibility |
-|-------|-------|---------------|
-| Views | `*View.swift` | Display-only, read from `AppState` |
-| State | `AppState.swift` | `@Observable @MainActor` single source of truth |
-| Engine | `ScoringEngine.swift` | Beat-interval scoring, combo tracking |
-| Pose | `PoseDetector.swift` | Camera + Apple Vision body pose detection |
-| Audio | `AudioPlayer.swift` | AVAudioEngine playback, tempo control, practice mode |
-| Render | `GhostRenderer.swift`, `MovePreviewRenderer.swift` | Metal rendering |
-| Generation | `GenerationManager.swift` | Launches Python pipeline, streams progress |
+| Layer | Key File(s) | Role |
+|-------|-------------|------|
+| State | `AppState.swift` | Single source of truth (`@Observable @MainActor`) |
+| Views | `*View.swift` | Display-only — read state, emit actions |
+| Engine | `ScoringEngine.swift` | Beat-interval scoring, combos |
+| Pose | `PoseDetector.swift` | Camera + Vision body pose |
+| Audio | `AudioPlayer.swift` | Playback, tempo, practice mode |
+| Render | `GhostRenderer.swift` | Metal rendering |
+| Generation | `GenerationManager.swift` | Python pipeline bridge |
 
 ## License
 
