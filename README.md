@@ -22,27 +22,20 @@ Removes the app, all data, caches, preferences, and privacy permissions — no t
 
 **Requirements:** macOS 14.0+, Xcode 15+, Python 3.11+
 
-### Quick Start
+### Setup
 
 ```bash
-# 1. Generate the Xcode project
+# Generate the Xcode project
 xcodegen generate
 
-# 2. Build and run
-open MacDance.xcodeproj   # then hit Run in Xcode
+# Set up the Python env for choreography generation
+cd Scripts && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && cd ..
+
+# Open in Xcode and hit Run
+open MacDance.xcodeproj
 ```
 
-### Setup Choreography Generation
-
-The app generates dance choreography from audio files. This requires a Python environment:
-
-```bash
-cd Scripts
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-Then build the bundled binary that ships with the app:
+To build the bundled Python binary that ships with the app:
 
 ```bash
 ./Scripts/build_binary.sh          # full (includes torch/EDGE)
