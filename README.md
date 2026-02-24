@@ -44,6 +44,15 @@ pip install -r requirements.txt
 ./Scripts/build_binary.sh --light  # template-only, smaller binary
 ```
 
+### Clean Up
+
+```bash
+rm -rf ~/Library/DerivedData/MacDance-*   # Xcode build cache
+rm -rf build/                              # installer artifacts
+```
+
+This removes all dev-side artifacts. Nothing else is created on your machine during development.
+
 ### Build Installer
 
 ```bash
