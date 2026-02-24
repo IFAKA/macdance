@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C55EC074D063E0893779E08 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EAFB277B62D8D5CF3FF329 /* LibraryView.swift */; };
+		166D0AB75A2644C45DB9A694 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD2C5CE10D1ABD3C986C2BE /* StorageManager.swift */; };
+		1A92D59DBDD863D6E60F4521 /* MacDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5676D199EB6A554C3D4A9D /* MacDanceApp.swift */; };
+		275F51399DF655E7FAB9E52D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7F7B8B938B52D8ADA97163 /* AudioPlayer.swift */; };
+		27609EB79341CBB54157A375 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0F83A672CC1C070D29F5A4 /* TestData.swift */; };
+		2F8F20F25C24394E58B814F5 /* ChoreoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26BFC19C9F8BA8EADB62663 /* ChoreoPlayer.swift */; };
+		3683C04251326D25D8DCA867 /* GenerationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFFD9B7BEF5D718874F8E4C /* GenerationManager.swift */; };
+		427F10037AF945D0521AF0E8 /* GeneratingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F2A94AB66C794618B0A7B5 /* GeneratingView.swift */; };
+		5564818CE45BEA9D968C4451 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335A7F6DF31FAB49D639697 /* SoundEffects.swift */; };
+		57FE0B1B575762ACFC2EC977 /* ScoringEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AAAF7D29EEEACF090F0821 /* ScoringEngine.swift */; };
+		5A722F4F4C4344EA71E8BB8D /* ScoreHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692E64C66475318467E1562C /* ScoreHistory.swift */; };
+		5BC418342C694F76AC7661DC /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B9FFAEF07C3F75A90688E /* Song.swift */; };
+		61E6C664C170D29E32953FD7 /* MovePreviewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA8D3782026E7E0C3AF7C4 /* MovePreviewRenderer.swift */; };
+		75CA0FCE1FCDA046495EDD39 /* GhostShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0E297078A5B3F24FF2993340 /* GhostShaders.metal */; };
+		9330F9C14B0FC42E53D202FD /* PauseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13899632BF2E878F3A7C86A /* PauseOverlayView.swift */; };
+		AD402373E4FDB58D3F840385 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D37B0C9F6E79984CDB8AE31 /* RootView.swift */; };
+		C6DA83D8A7C2C5F95D665BC6 /* PoseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90EAFE1B0FAA42A149F70E /* PoseDetector.swift */; };
+		D2D8077596AD353F7B872599 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49789C9421BFD2CD629B0D9 /* AppState.swift */; };
+		D469E0C635D61F336256D785 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE30AF40FC43249B99186313 /* ResultView.swift */; };
+		D53969826FFDE2EF93242606 /* Choreography.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD332D106B22B5DBE653476 /* Choreography.swift */; };
+		D6CF8F19F76012A9C42E02FC /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA80240EE7D7CD5B37C5F5D /* GameView.swift */; };
+		DE7E5F0B04B4EF4735FDD35A /* EmptyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA9AD1A5465FFF123ED698 /* EmptyLibraryView.swift */; };
+		E9189B41AA8706A5D61E5CF5 /* MacDanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A940CBC8C8A4C3B5B278F9 /* MacDanceTests.swift */; };
+		EA23AE6A0E3706DBFD96FD8A /* ScoreTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E072CE8C8ED0CA59A3A0254 /* ScoreTier.swift */; };
+		EDC5DC6306CED8A0126A99C2 /* CalibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5FF7681AB14B78405AB940 /* CalibrationView.swift */; };
+		FE1A67C87811039D082AA86C /* GhostRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFEB02DA645B25BA6B8A825 /* GhostRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4458709A1FCE0B54B72614C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33086F6CB6D30714130E4D52 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C08569123B1DAF1982814FB8;
+			remoteInfo = MacDance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C5FF7681AB14B78405AB940 /* CalibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationView.swift; sourceTree = "<group>"; };
+		0D37B0C9F6E79984CDB8AE31 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0E072CE8C8ED0CA59A3A0254 /* ScoreTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTier.swift; sourceTree = "<group>"; };
+		0E297078A5B3F24FF2993340 /* GhostShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GhostShaders.metal; sourceTree = "<group>"; };
+		107226E7966636F95EE358BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A5676D199EB6A554C3D4A9D /* MacDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDanceApp.swift; sourceTree = "<group>"; };
+		20F2A94AB66C794618B0A7B5 /* GeneratingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingView.swift; sourceTree = "<group>"; };
+		231B9FFAEF07C3F75A90688E /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		3ACDF691C664CB3DBD327B6C /* MacDanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacDanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BFFD9B7BEF5D718874F8E4C /* GenerationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationManager.swift; sourceTree = "<group>"; };
+		6335A7F6DF31FAB49D639697 /* SoundEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		692E64C66475318467E1562C /* ScoreHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistory.swift; sourceTree = "<group>"; };
+		80CA9AD1A5465FFF123ED698 /* EmptyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLibraryView.swift; sourceTree = "<group>"; };
+		86A940CBC8C8A4C3B5B278F9 /* MacDanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDanceTests.swift; sourceTree = "<group>"; };
+		88EAFB277B62D8D5CF3FF329 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		8AA80240EE7D7CD5B37C5F5D /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		8DFEB02DA645B25BA6B8A825 /* GhostRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostRenderer.swift; sourceTree = "<group>"; };
+		93A0868BF146E01762958A4E /* MacDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AAAF7D29EEEACF090F0821 /* ScoringEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringEngine.swift; sourceTree = "<group>"; };
+		A4E47E9A47509D4CA006F4B2 /* MacDance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDance.entitlements; sourceTree = "<group>"; };
+		ADD2C5CE10D1ABD3C986C2BE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		AE90EAFE1B0FAA42A149F70E /* PoseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseDetector.swift; sourceTree = "<group>"; };
+		BE30AF40FC43249B99186313 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		BF0F83A672CC1C070D29F5A4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		D49789C9421BFD2CD629B0D9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		EDFA8D3782026E7E0C3AF7C4 /* MovePreviewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePreviewRenderer.swift; sourceTree = "<group>"; };
+		EF7F7B8B938B52D8ADA97163 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		F13899632BF2E878F3A7C86A /* PauseOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseOverlayView.swift; sourceTree = "<group>"; };
+		F26BFC19C9F8BA8EADB62663 /* ChoreoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreoPlayer.swift; sourceTree = "<group>"; };
+		FAD332D106B22B5DBE653476 /* Choreography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choreography.swift; sourceTree = "<group>"; };
+		FD76F4465FB96C83993450BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		014E15BEEE954B720011E19A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD332D106B22B5DBE653476 /* Choreography.swift */,
+				692E64C66475318467E1562C /* ScoreHistory.swift */,
+				0E072CE8C8ED0CA59A3A0254 /* ScoreTier.swift */,
+				231B9FFAEF07C3F75A90688E /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D07691049784C5E1B36F343 /* MacDance */ = {
+			isa = PBXGroup;
+			children = (
+				107226E7966636F95EE358BF /* Info.plist */,
+				A4E47E9A47509D4CA006F4B2 /* MacDance.entitlements */,
+				9A2BF3D936FC8ED3705C178C /* App */,
+				32576D5A6818D72DE77FD1D6 /* Engine */,
+				D811E82CE2B8CA45DD2476A3 /* Generation */,
+				014E15BEEE954B720011E19A /* Models */,
+				E6F73DE07D215CE00334FEEE /* Views */,
+			);
+			path = MacDance;
+			sourceTree = "<group>";
+		};
+		32576D5A6818D72DE77FD1D6 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F7B8B938B52D8ADA97163 /* AudioPlayer.swift */,
+				F26BFC19C9F8BA8EADB62663 /* ChoreoPlayer.swift */,
+				8DFEB02DA645B25BA6B8A825 /* GhostRenderer.swift */,
+				0E297078A5B3F24FF2993340 /* GhostShaders.metal */,
+				EDFA8D3782026E7E0C3AF7C4 /* MovePreviewRenderer.swift */,
+				AE90EAFE1B0FAA42A149F70E /* PoseDetector.swift */,
+				A1AAAF7D29EEEACF090F0821 /* ScoringEngine.swift */,
+				6335A7F6DF31FAB49D639697 /* SoundEffects.swift */,
+				ADD2C5CE10D1ABD3C986C2BE /* StorageManager.swift */,
+				BF0F83A672CC1C070D29F5A4 /* TestData.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		9A2BF3D936FC8ED3705C178C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D49789C9421BFD2CD629B0D9 /* AppState.swift */,
+				1A5676D199EB6A554C3D4A9D /* MacDanceApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ACA23FC538B1770900175B1C /* MacDancetests */ = {
+			isa = PBXGroup;
+			children = (
+				FD76F4465FB96C83993450BF /* Info.plist */,
+				86A940CBC8C8A4C3B5B278F9 /* MacDanceTests.swift */,
+			);
+			path = MacDancetests;
+			sourceTree = "<group>";
+		};
+		C7FD1E7120F17553215A72CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93A0868BF146E01762958A4E /* MacDance.app */,
+				3ACDF691C664CB3DBD327B6C /* MacDanceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D811E82CE2B8CA45DD2476A3 /* Generation */ = {
+			isa = PBXGroup;
+			children = (
+				4BFFD9B7BEF5D718874F8E4C /* GenerationManager.swift */,
+			);
+			path = Generation;
+			sourceTree = "<group>";
+		};
+		E6F73DE07D215CE00334FEEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0C5FF7681AB14B78405AB940 /* CalibrationView.swift */,
+				80CA9AD1A5465FFF123ED698 /* EmptyLibraryView.swift */,
+				8AA80240EE7D7CD5B37C5F5D /* GameView.swift */,
+				20F2A94AB66C794618B0A7B5 /* GeneratingView.swift */,
+				88EAFB277B62D8D5CF3FF329 /* LibraryView.swift */,
+				F13899632BF2E878F3A7C86A /* PauseOverlayView.swift */,
+				BE30AF40FC43249B99186313 /* ResultView.swift */,
+				0D37B0C9F6E79984CDB8AE31 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1AC6A3D34ACA332DC98C11D = {
+			isa = PBXGroup;
+			children = (
+				1D07691049784C5E1B36F343 /* MacDance */,
+				ACA23FC538B1770900175B1C /* MacDancetests */,
+				C7FD1E7120F17553215A72CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A96E725B68DE33CA597D9D9 /* MacDanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73433806344CD58E9BC97BDD /* Build configuration list for PBXNativeTarget "MacDanceTests" */;
+			buildPhases = (
+				D5E71C1D5024E2E5C3079967 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58EAA6A8514F149969166A77 /* PBXTargetDependency */,
+			);
+			name = MacDanceTests;
+			packageProductDependencies = (
+			);
+			productName = MacDanceTests;
+			productReference = 3ACDF691C664CB3DBD327B6C /* MacDanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C08569123B1DAF1982814FB8 /* MacDance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617B245A3C75A76CACA39D46 /* Build configuration list for PBXNativeTarget "MacDance" */;
+			buildPhases = (
+				7E29D8F2F69446E7C25045D4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacDance;
+			packageProductDependencies = (
+			);
+			productName = MacDance;
+			productReference = 93A0868BF146E01762958A4E /* MacDance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33086F6CB6D30714130E4D52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1A96E725B68DE33CA597D9D9 = {
+						ProvisioningStyle = Automatic;
+					};
+					C08569123B1DAF1982814FB8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6C783F82C4AEBE5F799D53D4 /* Build configuration list for PBXProject "MacDance" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F1AC6A3D34ACA332DC98C11D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C08569123B1DAF1982814FB8 /* MacDance */,
+				1A96E725B68DE33CA597D9D9 /* MacDanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E29D8F2F69446E7C25045D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D8077596AD353F7B872599 /* AppState.swift in Sources */,
+				275F51399DF655E7FAB9E52D /* AudioPlayer.swift in Sources */,
+				EDC5DC6306CED8A0126A99C2 /* CalibrationView.swift in Sources */,
+				2F8F20F25C24394E58B814F5 /* ChoreoPlayer.swift in Sources */,
+				D53969826FFDE2EF93242606 /* Choreography.swift in Sources */,
+				DE7E5F0B04B4EF4735FDD35A /* EmptyLibraryView.swift in Sources */,
+				D6CF8F19F76012A9C42E02FC /* GameView.swift in Sources */,
+				427F10037AF945D0521AF0E8 /* GeneratingView.swift in Sources */,
+				3683C04251326D25D8DCA867 /* GenerationManager.swift in Sources */,
+				FE1A67C87811039D082AA86C /* GhostRenderer.swift in Sources */,
+				75CA0FCE1FCDA046495EDD39 /* GhostShaders.metal in Sources */,
+				0C55EC074D063E0893779E08 /* LibraryView.swift in Sources */,
+				1A92D59DBDD863D6E60F4521 /* MacDanceApp.swift in Sources */,
+				61E6C664C170D29E32953FD7 /* MovePreviewRenderer.swift in Sources */,
+				9330F9C14B0FC42E53D202FD /* PauseOverlayView.swift in Sources */,
+				C6DA83D8A7C2C5F95D665BC6 /* PoseDetector.swift in Sources */,
+				D469E0C635D61F336256D785 /* ResultView.swift in Sources */,
+				AD402373E4FDB58D3F840385 /* RootView.swift in Sources */,
+				5A722F4F4C4344EA71E8BB8D /* ScoreHistory.swift in Sources */,
+				EA23AE6A0E3706DBFD96FD8A /* ScoreTier.swift in Sources */,
+				57FE0B1B575762ACFC2EC977 /* ScoringEngine.swift in Sources */,
+				5BC418342C694F76AC7661DC /* Song.swift in Sources */,
+				5564818CE45BEA9D968C4451 /* SoundEffects.swift in Sources */,
+				166D0AB75A2644C45DB9A694 /* StorageManager.swift in Sources */,
+				27609EB79341CBB54157A375 /* TestData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E71C1D5024E2E5C3079967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9189B41AA8706A5D61E5CF5 /* MacDanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58EAA6A8514F149969166A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C08569123B1DAF1982814FB8 /* MacDance */;
+			targetProxy = 4458709A1FCE0B54B72614C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03C2292298181CF1367E99FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macdance.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		070F32A7A535A07EC08B56BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacDance/MacDance.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacDance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = MacDance;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6E682BFB6C448256DC089ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacDancetests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacDance.app/Contents/MacOS/MacDance";
+			};
+			name = Debug;
+		};
+		83C2C7137F935547D51D215B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacDance/MacDance.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MacDance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = MacDance;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8D24F6B2C4F2D04025EEC828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macdance.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F485B5297B360AA39B73F131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacDancetests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacDance.app/Contents/MacOS/MacDance";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		617B245A3C75A76CACA39D46 /* Build configuration list for PBXNativeTarget "MacDance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070F32A7A535A07EC08B56BD /* Debug */,
+				83C2C7137F935547D51D215B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6C783F82C4AEBE5F799D53D4 /* Build configuration list for PBXProject "MacDance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D24F6B2C4F2D04025EEC828 /* Debug */,
+				03C2292298181CF1367E99FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73433806344CD58E9BC97BDD /* Build configuration list for PBXNativeTarget "MacDanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E682BFB6C448256DC089ABC /* Debug */,
+				F485B5297B360AA39B73F131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33086F6CB6D30714130E4D52 /* Project object */;
+}

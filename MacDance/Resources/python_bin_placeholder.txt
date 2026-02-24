@@ -1,0 +1,4 @@
+This directory is where python_bin (PyInstaller executable) is placed after running:
+  Scripts/build_binary.sh
+
+Until then, GenerationManager will detect the missing binary and report an error.
