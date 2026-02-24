@@ -1,50 +1,54 @@
 # MacDance
 
-A macOS dance game that uses your camera to track body poses and score your moves against choreographed routines. Built with Swift 6, SwiftUI, Metal, and Apple Vision.
+A macOS dance game that uses your camera to track body poses and score your moves against choreographed routines.
 
-## Requirements
+## Install
 
-- macOS 14.0+
-- Xcode 15+
-- Camera (for pose tracking)
-- Python 3.11+ (for choreography generation only)
+1. Download `MacDance.dmg` from [Releases](https://github.com/IFAKA/macdance/releases)
+2. Open the DMG and drag MacDance to Applications
+3. Launch MacDance — grant camera and microphone access when prompted
 
-## Build & Run
+### Uninstall
 
 ```bash
-# Generate Xcode project (after adding/removing files)
-xcodegen generate
+./Scripts/uninstall.sh
+```
 
-# Build
+Removes the app, all data, caches, preferences, and privacy permissions — no trace left.
+
+---
+
+## Development
+
+Requirements: macOS 14.0+, Xcode 15+, Python 3.11+ (for choreography generation)
+
+### Build & Run
+
+```bash
+xcodegen generate    # after adding/removing files
 xcodebuild -scheme MacDance -configuration Debug build
-
-# Test
 xcodebuild test -scheme MacDance -destination 'platform=macOS'
 ```
 
 Or open `MacDance.xcodeproj` in Xcode and hit Run.
 
-## Choreography Generation
+### Choreography Generation
 
-MacDance generates dance choreography from audio using a Python pipeline (librosa beat tracking, with an EDGE model path for future AI-generated moves).
+Generates dance choreography from audio using librosa beat tracking (with an EDGE model path for future AI-generated moves).
 
 ```bash
-# Set up Python environment
 cd Scripts && python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# Build the bundled binary for the app
 ./Scripts/build_binary.sh          # full (includes torch/EDGE)
 ./Scripts/build_binary.sh --light  # template-only, smaller binary
 ```
 
-## Distribution
-
 ### Build Installer
 
 ```bash
-./Scripts/build_installer.sh                # archive → notarize → DMG
-./Scripts/build_installer.sh --skip-notarize  # local testing
+./Scripts/build_installer.sh                  # archive → notarize → DMG
+./Scripts/build_installer.sh --skip-notarize  # local testing without Apple ID
 ```
 
 **One-time setup:**
@@ -55,17 +59,9 @@ pip install -r requirements.txt
    xcrun notarytool store-credentials "MacDance" \
      --apple-id you@email.com --team-id XXXXXXXXXX
    ```
-3. Optionally install `create-dmg` for a polished DMG window: `brew install create-dmg`
+3. Optionally: `brew install create-dmg` for a polished DMG window
 
-### Uninstall
-
-```bash
-./Scripts/uninstall.sh
-```
-
-Removes the app, sandboxed data, caches, preferences, and privacy permissions — no trace left.
-
-## Architecture
+### Architecture
 
 | Layer | Files | Responsibility |
 |-------|-------|---------------|
@@ -74,7 +70,7 @@ Removes the app, sandboxed data, caches, preferences, and privacy permissions �
 | Engine | `ScoringEngine.swift` | Beat-interval scoring, combo tracking |
 | Pose | `PoseDetector.swift` | Camera + Apple Vision body pose detection |
 | Audio | `AudioPlayer.swift` | AVAudioEngine playback, tempo control, practice mode |
-| Render | `GhostRenderer.swift`, `MovePreviewRenderer.swift` | Metal-based ghost/preview rendering |
+| Render | `GhostRenderer.swift`, `MovePreviewRenderer.swift` | Metal rendering |
 | Generation | `GenerationManager.swift` | Launches Python pipeline, streams progress |
 
 ## License
