@@ -25,7 +25,7 @@ Requires macOS 14.0+, Xcode 15+, Python 3.11+
 ```bash
 xcodegen generate && open MacDance.xcodeproj    # build & run
 xcodebuild test -scheme MacDance -destination 'platform=macOS'  # test
-./Scripts/uninstall.sh                           # clean up
+rm -rf ~/Library/DerivedData/MacDance-* build/   # clean up
 ```
 
 ## License
